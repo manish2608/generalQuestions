@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(238, 235, 235);
+            padding: 100px 0px 10px 0px;
+        }
+        
+        #main {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            max-width: 400px;
+        }
+        
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            width: 418px;
+            height: 100%;
+            border: 2px solid #cac5c5;
+            margin: 10px 0px;
+            box-shadow: 2px 2px #cac5c5;
+        }
+        
+        p {
+            padding: 30px;
+        }
+        
+        h3 {
+            padding: 0px;
+        }
+        
+        h1 {
+            font-family: cursive;
+            font-weight: bold;
+            color: burlywood;
+            text-align: center;
+        }
+        
+        .btn {
+            margin-left: 30px;
+            width: 26px;
+            height: 26px;
+            padding: 0px;
+            background-color: red
+        }
+    </style>
+    <script>
+        function fun() {
+            var paraRef = document.getElementById("p1")
+
+            paraRef.innerText = "yes";
+            paraRef.style.color = "red"
+        }
+
+        function f2() {
+            var paraRef = document.getElementById("p2")
+
+            paraRef.innerText = "yes";
+            paraRef.style.color = "red"
+        }
+
+        function f3() {
+            var paraRef = document.getElementById("p3")
+
+            paraRef.innerText = "yes";
+            paraRef.style.color = "red"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <h1>Gereral Questions</h1>
+
+            <div class="left">
+                <h3>Do you accept all major credit cards?</h3>
+                <button onclick="fun()" class="btn"><span class="material-icons">
+                add
+            </span></button>
+                <p id="p1"></p>
+            </div>
+
+            <div class="left">
+                <h3>Do you suppport local farmers ?</h3>
+                <button onclick="f2()" class="btn"><span class="material-icons">
+                add
+            </span></button>
+                <p id="p2"></p>
+            </div>
+
+            <div class="left">
+                <h3>Do you use organic ingredients?</h3>
+                <button onclick="f3()" class="btn"><span class="material-icons">
+                add
+            </span></button>
+                <p id="p3"></p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
